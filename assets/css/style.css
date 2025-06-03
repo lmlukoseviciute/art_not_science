@@ -1,0 +1,61 @@
+:root {
+  --blue: #3F51D7;
+  --blue-light: #4366DD;
+  --red: #FE4A3A;
+  --yellow: #FFB820;
+  --cyan: #1AA5CC;
+  --bg: #f8f8f8;
+  --text: #222;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background-color: var(--blue);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 3em 1em;
+  background: linear-gradient(to right, var(--blue), var(--cyan));
+  color: white;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1em;
+  padding: 2em;
+}
+
+.gallery a {
+  text-align: center;
+  color: var(--blue);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.gallery a:hover {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  height: 140px;
+  object-fit: cover;
+}
